@@ -121,6 +121,14 @@ body{
     padding-right: 25px;
 }
 
+.main_panel_text_status-active{
+   color: #12c73c;
+}
+
+.main_panel_text_status-inactive{
+    color: #8b1c1c;
+}
+
 .main_panel_buttons{
     display: flex;
     gap: 20px;

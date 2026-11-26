@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinePanel</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -64,19 +65,20 @@
                     <p>
                         Minecraft Vanilla 1.21.3
                     </p>
-                    <p>
-                        Online</p>
+                    <p class="main_panel_text_status-active" id = "serverStatus">
+                        Online
+                    </p>
                 </div>
                 <div class="main_panel_buttons">
-                    <button class="main_panel_buttons_start">
+                    <button class="main_panel_buttons_start" id = "startButton">
                         <img src="assets/start_server.png" class="main_panel_buttons_icon" alt="">
                         <p>Запустить</p>
                     </button>
-                    <button class="main_panel_buttons_stop">
+                    <button class="main_panel_buttons_stop" id="stopButton">
                         <img src="assets/stop_server.png" class="main_panel_buttons_icon" alt="">
                         <p>Стоп</p>
                     </button>
-                    <button class="main_panel_buttons_restart">
+                    <button class="main_panel_buttons_restart" id="restartButton">
                         <img src="assets/restart.png" class="main_panel_buttons_icon_restart" alt="">
                         <p>Рестарт</p>
                     </button>
@@ -88,11 +90,11 @@
                         <img src="assets/people.png" class="main_panel_info_card_icon" alt="">
                         <p class="main_panel_info_card_header_text">Игроки</p>
                     </div>
-                        <p class="main_panel_info_card_text">
+                        <p class="main_panel_info_card_text" id="playerCount">
                             3 / 20
                         </p>
                         <div class="main_panel_info_card_progress">
-                            <div class="main_panel_info_card_progress_bar"></div>
+                            <div class="main_panel_info_card_progress_bar" id="playerProgressBar"></div>
                         </div>
                     </div>
                     <div class="main_panel_info_card">
@@ -100,11 +102,11 @@
                             <img src="assets/CPU.png" class="main_panel_info_card_icon" alt="">
                             <p class="main_panel_info_card_header_text">CPU</p>
                         </div>
-                        <p class="main_panel_info_card_text">
+                        <p class="main_panel_info_card_text" id="cpuUsage">
                             24%
                         </p>
                         <div class="main_panel_info_card_progress">
-                            <div class="main_panel_info_card_progress_bar"></div>
+                            <div class="main_panel_info_card_progress_bar" id="cpuProgressBar"></div>
                         </div>
                     </div>
                     <div class="main_panel_info_card">
@@ -112,11 +114,11 @@
                             <img src="assets/RAM.png" class="main_panel_info_card_icon" alt="">
                             <p class="main_panel_info_card_header_text">RAM</p>
                         </div>
-                        <p class="main_panel_info_card_text">
+                        <p class="main_panel_info_card_text" id ="ramUsage">
                             3.2 / 8 GB
                         </p>
                         <div class="main_panel_info_card_progress">
-                            <div class="main_panel_info_card_progress_bar"></div>
+                            <div class="main_panel_info_card_progress_bar" id="ramProgressBar"></div>
                         </div>
                     </div>
                     <div class="main_panel_info_card">
@@ -124,11 +126,11 @@
                             <img src="assets/speed.png" class="main_panel_info_card_icon" alt="">
                             <p class="main_panel_info_card_header_text">TPS</p>
                         </div>
-                        <p class="main_panel_info_card_text">
+                        <p class="main_panel_info_card_text" id ="tpsValue">
                             20.0
                         </p>
                         <div class="main_panel_info_card_progress">
-                            <div class="main_panel_info_card_progress_bar"></div>
+                            <div class="main_panel_info_card_progress_bar" id="tpsProgressBar"></div>
                         </div>
                     </div>
                 </div>
